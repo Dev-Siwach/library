@@ -1,0 +1,76 @@
+html{
+    background-color: #F1F1F1;
+}
+
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+}
+
+.card{
+    background-color: #0C0C0C;
+    color: #C7C7C7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+ .card>button{
+    background-color: #C7C7C7;
+    color: #0C0C0C;
+    font-size: large;
+    font-weight: 900;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border-radius: 50%;
+    border-style: none;
+    border: 0px;
+    padding: 1rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    transition: all 250ms;
+ }
+
+.card>button:hover{
+   transform: scale(1.1); 
+}
+
+ .card>h1{
+    text-align: center;
+ }
+
+ .card>h3{
+    text-align: center;
+ }
+
+ .card>p{
+    text-align: center;
+ }
+
+#addBookBtn{
+    font-size: large;
+    font-weight: bold;
+    background-color: #000000;
+    color: #C7C7C7;
+    display: flex;
+    margin: auto;
+    margin-top: 2rem;
+    border-style: none;
+    border-radius: 20rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    transition: all 200ms;
+    box-sizing: border-box;
+}
+
+#addBookBtn:hover{
+    transform: scale(1.1);
+    box-shadow: 0.4rem 0.6rem 1rem;
+}
