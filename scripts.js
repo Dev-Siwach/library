@@ -1,15 +1,19 @@
 const myLibrary = [
 ];
 
-console.table(myLibrary);
 // takes some info to create books as object and store them in myLibrary[] array
 function book() {
-    const book_name = prompt("Please Enter Book name : ");
-    const author_name = prompt("Enter author name : ");
-    const total_pages = prompt("Enter the no. of pages : ");
-    const newBook = {name:book_name, author:author_name, pages:total_pages};
+    const bookTitleInput = document.getElementById("bookTitleInput").value;
+    const bookAuthorInput = document.getElementById("bookAuthorInput").value;
+    const bookPagesInput = document.getElementById("bookPagesInput").value;
+    const newBook = {name:bookTitleInput, author:bookAuthorInput, pages:bookPagesInput};
     myLibrary.push(newBook);
+    const addBookDialog = document.getElementById("addBookDialog");
+    addBookDialog.close();
     addBookToLibrary();
+    document.getElementById("bookTitleInput").value = "";
+    document.getElementById("bookAuthorInput").value = "";
+    document.getElementById("bookPagesInput").value = "";
 }
 
 // adds books from myLibrary[] then displays them on the screen
@@ -42,4 +46,13 @@ function addBookToLibrary(){
 
 function removeCard() {
     this.parentElement.remove();
+}
+
+function openDialogBox(){
+    const addBookDialog = document.getElementById("addBookDialog");
+    addBookDialog.showModal();
+}
+
+function closeDialogBox(){
+    const closeDialogBox = document.getElementById("closeDiaologBox");
 }

@@ -53,7 +53,7 @@ html{
     text-align: center;
  }
 
-#addBookBtn{
+#openDialogBox{
     font-size: large;
     font-weight: bold;
     background-color: #000000;
@@ -70,7 +70,7 @@ html{
     box-sizing: border-box;
 }
 
-#addBookBtn:hover{
+#openDialogBox:hover{
     transform: scale(1.1);
     box-shadow: 0.4rem 0.6rem 1rem;
 }

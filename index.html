@@ -8,7 +8,44 @@
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <button id="addBookBtn" onclick="book()">Add Book</button>
+        <button id="openDialogBox" onclick="openDialogBox()">Add Book</button>
+        <dialog id="addBookDialog">
+            <form>
+              <div>
+                <button type="submit" formmethod="dialog" >x</button>
+              </div>
+              <div>
+                <label for="bookTitle"> Book Name</label>
+                <input
+                  type="text"
+                  name="bookTitle"
+                  placeholder="eg : Harry Potter"
+                  id="bookTitleInput"
+                />
+              </div>
+              <div>
+                <label for="bookAuthor">Author</label>
+                <input
+                  type="text"
+                  name="bookAuthor"
+                  placeholder="eg : J.k. Rowling"
+                  id="bookAuthorInput"
+                />
+              </div>
+              <div>
+                <label for="bookPages">Number of Pages</label>
+                <input
+                  type="number"
+                  name="bookPages"
+                  placeholder="eg : 456"
+                  id="bookPagesInput"
+                />
+              </div>
+              <div>
+                <button type="button" id="addCardButton" onclick="book()">Add</button>
+              </div>
+            </form>
+          </dialog>
         <div id="main"></div>
        <script src="./scripts.js"></script> 
     </body>
